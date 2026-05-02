@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Future Public School</title>
+
+<style>
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ye center karega */
+}
+
+.gallery img {
+    width: 90%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+#facilities {
+    text-align: center;
+}
+.facility-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* center horizontally */
+}
+
+.facility-box {
+    width: 90%;
+    max-width: 500px;   /* sab ka same size */
+    margin: 20px auto;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    text-align: center;
+}
+.facility-box img {
+    width: 100%;
+    height: 220px;        /* sab images same */
+    object-fit: cover;    /* crop hoga, stretch nahi */
+    border-radius: 12px;
+    display: block;
+}
+.logo {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+.school-image {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.school-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.box {
+  width: 300px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+/* Main section box */
+.teachers-section {
+  background: #f5f5f5;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.teachers-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Inner cards container */
+.teachers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual teacher cards */
+.teacher-card {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Name */
+.teacher-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Subject */
+.teacher-card p {
+  margin: 3px 0 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.library img {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+}
+
+.library p {
+  text-align: center;
+  max-width: 600px;
+  margin: 15px auto;
+  font-size: 18px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 5px 10px;    
+  margin:0;
+  text-align: center;
+  color: white;
+
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu a {
+    background: white;
+    color: #1e3c72;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;   /* scroll enable */
+  gap: 8px;
+  padding: 8px;
+}
+
+.navbar a {
+  flex: 0 0 auto;     /* shrink nahi honge */
+  background: orange;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  background: #ff8c00;
+}
+
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin: 5px 20px;
+  padding: 20px 10px;
+  background: #f5f5f5;   /* simple background */
+}
+.hero-box {
+  margin-top: 0;
+  padding:10px 15px 25px;
+}
+.hero-box h1 {
+  margin-top: 0;
+}
+.hero-box h1 span {
+  color: #1565c0;   /* blue highlight */
+}
+
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 80%;
+  max-width: 250px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+/* simple colors (no gradient) */
+.apply { background: #ffc107; }
+.call { background: #1565c0; }
+.whatsapp { background: #25D366; }
+/* Apply Now Button */
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+/* Hover */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+
+
+/* Hover Effect */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Click Effect */
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* COMMON SECTION */
+section{
+    padding:20px 10px;
+}
+
+.container{
+    margin:0 auto;
+    padding:0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:10px;
+    color:#0d47a1;
+    font-size:32px;
+}
+
+.about {
+  text-align: center;
+  padding: 40px 20px;
+}
+.about-box {
+  border-left: 5px solid #2a5298;
+}
+.about-box:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.about-box {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  line-height: 1.7;
+}
+
+.about-box p {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+
+/* APPLY FORM */
+.apply-form{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    max-width:700px;
+    margin:auto;
+}
+
+.apply-form input,
+.apply-form select,
+.apply-form textarea{
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.apply-form button{
+    width:100%;
+}
+
+/* REVIEW */
+.review-box{
+    background:white;
+    padding:25px;
+    margin:15px auto;
+    border-radius:12px;
+    max-width:800px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.review-box h4{
+    color:#0d47a1;
+    margin-bottom:10px;
+}
+
+/* OPENING TIME */
+.timing{
+    text-align:center;
+    font-size:18px;
+    line-height:2;
+}
+
+/* CONTACT */
+.contact p{
+    text-align:center;
+    font-size:18px;
+    margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .teachers {
+        grid-template-columns: 1fr;
+    }
+}
+
+    
+
+    nav ul{
+        justify-content:center;
+        gap:12px;
+    }
+
+    .hero-content h1{
+        font-size:30px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    
+
+    .box img {
+  width: 90%;
+  max-width: 280px;   /* 👈 size control */
+  height: 180px;      /* 👈 fixed height (important) */
+  object-fit: cover;  /* 👈 image crop karke fit karega */
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+}
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+  padding: 15px !important;
+  text-align: center;
+  color: white !important;
+}
+
+.header {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+  
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+
+  <div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#apply">Apply Now</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#time">Opening Time</a>
+  <a href="#contact">Contact</a>
+</div>
+</div>
+
+
+<!-- HERO -->
+<section <div class="hero">
+    <img src="https://www.goodbrightfuturehighschool.com/img/Logo.png" class="logo">
+  <h1>Bright Future<span> Public School️📚</h1>
+  <p><b>
+  Providing Quality Education for a Better Tomorrow</b></p>
+
+  <a href="#" class="btn apply">Apply Now</a>
+  <a href="tel:+918851477630" class="btn call">Call Now</a>
+  <a href="https://wa.me/918851477630" class="btn whatsapp">WhatsApp Now</a>
+</div>
+<div class="school-image">
+  <img src="https://media.istockphoto.com/id/153525374/photo/elementary-school.jpg?s=612x612&w=0&k=20&c=mlY5BsAB8GhURdy8RH4aFDyaJSsnmme5gdnjmsY--EE=" alt="School" />
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us 🔮</h2>
+  <div class="about-box">
+    <p>
+      Bright Future Public School is dedicated to providing excellent education, 
+      discipline, and strong values to students️ </p>
+
+    <p>
+      🎯 Our mission is to create future leaders through quality learning, 
+      innovation, and moral excellence.
+    </p>
+
+    <p>
+      🎓 We focus on academic success, personality development, 
+      and building confident students for tomorrow ✨
+    </p>
+  </div>
+</section>
+<!-- PRINCIPAL MESSAGE -->
+<section id="principal">
+    <div class="container">
+        <h2>Principal Message✉️</h2>
+
+        <div class="review-box">
+            <h4>Message From Principal</h4>
+            <p>
+                Welcome to Bright Future Public School🪄
+                Our goal is to provide quality education,
+                strong values, and a bright future for every student📖
+                We believe in discipline, confidence, and success🎯
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- NOTICE BOARD -->
+<section id="notice">
+    <div class="container">
+        <h2>Notice Board📋</h2>
+
+        <div class="review-box">
+            <p>• New Admission Open for Session 2026-27</p>
+            <p>• Summer Vacation starts from 10 June</p>
+            <p>• PTM Meeting on Saturday at 11:00 AM</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- LATEST NEWS -->
+<section id="news">
+    <div class="container">
+        <h2>Latest News💭</h2>
+
+        <div class="review-box">
+            <p>• Annual Function will be held on 25th December</p>
+            <p>• Sports Competition Registration Started</p>
+            <p>• New Computer Lab launched successfully</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- TEACHER SECTION -->
+<section class="teachers">
+  <div class="teachers-section">
+  <h2>Our Teachers ✏️</h2>
+
+  <div class="teachers-container">
+    <div class="teacher-card">
+      <h3>Mrs. Sharma</h3>
+      <p>Mathematics Teacher</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Mr. Singh</h3>
+      <p>Hindi Teacher</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Mrs. Khan</h3>
+      <p>Social Science Teacher</p>
+    </div>
+
+    <div class="teacher-card">
+      <h3>Mr. Patel</h3>
+      <p>Chemistry Teacher</p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- FAQ SECTION -->
+<section id="faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="review-box">
+            <p><strong>Q:</strong> What is the admission process?</p>
+            <p><strong>A:</strong> Fill the online admission form and visit school office.</p>
+
+            <br>
+
+            <p><strong>Q:</strong> Is transport facility available?</p>
+            <p><strong>A:</strong> Yes, bus facility is available in selected areas.</p>
+        </div>
+    </div>
+</section>
+<section class="library">
+  <h2>Our School Library 📚</h2>
+
+  <img src="https://psd.sch.qa/archive/wp-content/uploads/high-school-library.jpg" 
+  alt="Library">
+
+  <p>
+    Our library provides a peaceful environment with a wide range of books 
+    to support students' learning and growth ✨
+  </p>
+</section>
+
+
+<!-- SCHOOL UNIFORM -->
+<section id="uniform">
+    <div class="container">
+        <h2>School Uniform Details</h2>
+
+        <div class="review-box">
+            <p>Boys: White Shirt + Navy Blue Pants + School Tie</p>
+            <p>Girls: White Shirt + Navy Blue Skirt + School Tie</p>
+            <p>Sports Day: White T-shirt + White Lower</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- SCHOLARSHIP INFO -->
+<section id="scholarship">
+    <div class="container">
+        <h2>Scholarship Information📚</h2>
+
+        <div class="review-box">
+            <p>
+                Merit-based scholarships are available for top-performing students.
+                Special scholarship support is also available for financially weak students.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="facilities">
+    <div class="facility-container">
+
+        <h2>Our Facilities 🪄</h2>
+
+             <div class="box">
+                <h3>Smart Classrooms🫧</h3>
+                <p>Modern digital classrooms for better learning experience📖</p>
+                  <img src="https://images.squarespace-cdn.com/content/v1/60c71940484f1a0d167f4151/1624270382465-WSD8177FEQU9C9NVDLUJ/Screen%2BShot%2B2020-10-22%2Bat%2B10.30.41%2BAM.png?format=1500w" 
+  alt="Smart Classroom">
+
+            </div>
+
+            <div class="box">
+                <h3>Science Labs🧬</h3>
+                <p>Well-equipped labs for practical learning and innovation🪄</p>
+                 <img src="https://moderngps.edu.om/wp-content/uploads/2023/02/IMG_011.jpeg" 
+  alt="Science Lab">
+
+            </div>
+
+            <div class="box">
+                <h3>Sports Ground🎗</h3>
+                <p>Large playground for physical activities and sports training🥅</p>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Taipei_Private_Yan_Ping_High_School_Playground.jpg/1920px-Taipei_Private_Yan_Ping_High_School_Playground.jpg?_=20110810190031" 
+  alt="School Playground">
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section>
+<h2>Our Achievements 🏆</h2>
+<p>🏅 100% Board Results</p>
+<p>🥇 District Level Sports Winners</p>
+</section>
+
+<!-- APPLY FORM -->
+<section id="apply">
+    <div class="container">
+
+        <h2>Student Admission Form📑</h2>
+
+        <div class="apply-form">
+
+            <form action="https://formsubmit.co/jiyasharma77899@gmail.com" method="POST">
+
+    <input type="text" name="Student Name" placeholder="Student Full Name" required>
+
+    <input type="text" name="Parent Name" placeholder="Parent Name" required>
+
+    <input type="tel" name="Mobile Number" placeholder="Parent Mobile Number" required>
+
+    <input type="email" name="Email" placeholder="Email Address" required>
+    <input 
+    type="text" 
+    name="Date of Birth" 
+    placeholder="Date of Birth (DD/MM/YYYY)" 
+    required
+>
+
+<select name="Gender" required>
+    <option value="">Select Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+</select>
+
+<textarea name="Full Address" placeholder="Full Address" required></textarea>
+
+<input type="text" name="City" placeholder="City" required>
+
+<input type="text" name="Previous School Name" placeholder="Previous School Name">
+
+<input type="text" name="Aadhar Number" placeholder="Aadhar Number (Optional)">
+
+    <select name="Class" required>
+        <option value="">Select Class</option>
+        <option>Nursery</option>
+        <option>LKG</option>
+        <option>UKG</option>
+        <option>Class 1</option>
+          <option>Class 2</option>
+    <option>Class 3</option>
+    <option>Class 4</option>
+    <option>Class 5</option>
+    <option>Class 6</option>
+    <option>Class 7</option>
+    <option>Class 8</option>
+    <option>Class 9</option>
+    <option>Class 10</option>
+    <option>Class 11</option>
+    <option>Class 12</option>
+    </select>
+
+    <input type="hidden" name="_subject" value="New Student Admission Form Submission">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <button type="submit">Submit Application</button>
+
+</form>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="review">
+        <h2>Parent Reviews🧿</h2>
+
+        <div class="review-box">
+            <h4>★★★★★ Priya Sharma</h4>
+            <p>
+                Excellent school with great teachers and a disciplined environment.
+                My child has improved a lot academically and personally💟
+            </p>
+        </div>
+
+        <div class="review-box">
+            <h4>★★★★★ Rajesh Verma</h4>
+            <p>
+                Very good management and smart learning system.
+                Highly recommended for quality education📚
+            </p>
+        </div>
+
+    </div>
+</section>
+<section>
+<h2>School Gallery</h2>
+<div class="gallery">
+<img src="https://cdn.britannica.com/79/218779-050-AB0CA851/Empty-high-school-classroom.jpg?w=400&h=300&c=crop" width="325">
+<img src="https://gardenhighschool.in/wp-content/uploads/2016/04/Library-1-1-1024x768.jpg" width="325">
+</div>
+</section>
+
+<!-- OPENING TIME -->
+<section id="time">
+
+        <h2>Opening Time⏰️</h2>
+
+        <div class="timing">
+            Monday - Friday : 8:00 AM - 4:00 PM<br>
+            Saturday : 8:00 AM - 1:00 PM<br>
+            Sunday : Closed
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="container">
+
+        <h2>Contact Us🦋</h2>
+
+        <p><strong>Address📍:</strong> Main Road, Delhi, India</p>
+        <p><strong>Phone📞:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> info@brightfuturepublicschool.com💻</p>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Bright Future Public School | All Rights Reserved🌼
+</footer>
+<script>
+</body>
+</html>
