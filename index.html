@@ -6,6 +6,128 @@
 <title>Bright Future Public School</title>
 
 <style>
+    /* ALL PREMIUM BOXES */
+
+.notice-box,
+.message-box,
+.contact-box,
+.timing-box,
+.news-box,
+.card,
+.box,
+.facility-box,
+.principal-box,
+.event-box,
+.gallery-box{
+
+background:linear-gradient(135deg,#ffffff,#eef4ff) !important;
+
+border-radius:28px !important;
+
+padding:40px !important;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08) !important;
+
+border:none !important;
+
+transition:0.4s !important;
+
+}
+
+/* HOVER EFFECT */
+
+.notice-box:hover,
+.message-box:hover,
+.contact-box:hover,
+.timing-box:hover,
+.news-box:hover,
+.card:hover,
+.box:hover,
+.facility-box:hover,
+.principal-box:hover,
+.event-box:hover,
+.gallery-box:hover{
+
+transform:translateY(-8px) !important;
+
+}
+    /* OPENING TIME BOX */
+
+.timing-box{
+background:linear-gradient(135deg,#ffffff,#eef4ff) !important;
+padding:40px !important;
+border-radius:28px !important;
+box-shadow:0 10px 30px rgba(0,0,0,0.08) !important;
+margin:40px 20px !important;
+text-align:center !important;
+}
+
+.timing-box h2{
+font-size:42px !important;
+color:#0F4C9C !important;
+margin-bottom:20px !important;
+font-weight:800 !important;
+}
+
+.timing-box p{
+font-size:18px !important;
+color:#333 !important;
+margin-bottom:12px !important;
+line-height:1.8 !important;
+}
+
+/* CONTACT BOX */
+
+.contact-box{
+background:linear-gradient(135deg,#ffffff,#eaf3ff) !important;
+padding:40px !important;
+border-radius:28px !important;
+box-shadow:0 10px 30px rgba(0,0,0,0.08) !important;
+margin:40px 20px !important;
+text-align:center !important;
+}
+
+.contact-box h2{
+font-size:42px !important;
+color:#0F4C9C !important;
+margin-bottom:20px !important;
+font-weight:800 !important;
+}
+
+.contact-box p{
+font-size:18px !important;
+color:#333 !important;
+margin-bottom:12px !important;
+line-height:1.8 !important;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.timing-box,
+.contact-box{
+
+padding:28px !important;
+margin:25px 15px !important;
+
+}
+
+.timing-box h2,
+.contact-box h2{
+
+font-size:32px !important;
+
+}
+
+.timing-box p,
+.contact-box p{
+
+font-size:16px !important;
+
+}
+
+}
     /* =========================
    PREMIUM SCHOOL COLOR PALETTE
 ========================= */
@@ -1035,32 +1157,40 @@ a:active {
 </div>
 </section>
 
-<!-- OPENING TIME -->
-<section id="time">
 
-        <h2>Opening Time⏰️</h2>
+<!-- OPENING TIME BOX -->
 
-        <div class="timing">
-            Monday - Friday : 8:00 AM - 4:00 PM<br>
-            Saturday : 8:00 AM - 1:00 PM<br>
-            Sunday : Closed
-        </div>
+<div class="timing-box">
 
-    </div>
-</section>
+<h2>Opening Time ⏰</h2>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-    <div class="container">
+<p>Monday - Friday : 8:00 AM - 4:00 PM</p>
 
-        <h2>Contact Us🦋</h2>
+<p>Saturday : 8:00 AM - 1:00 PM</p>
 
-        <p><strong>Address📍:</strong> Main Road, Delhi, India</p>
-        <p><strong>Phone📞:</strong> +91 98765 43210</p>
-        <p><strong>Email:</strong> info@brightfuturepublicschool.com💻</p>
+<p>Sunday : Holiday</p>
 
-    </div>
-</section>
+</div>
+
+
+<!-- CONTACT US BOX -->
+
+<div class="contact-box">
+
+<h2>Contact Us 📞</h2>
+
+<p>📍 Gurgaon, Haryana</p>
+
+<p>📞 +91 9876543210</p>
+
+<p>📧 brightfuture@gmail.com</p>
+
+<p>🌐 www.brightfuture.com</p>
+
+</div>
+
+
+            
 
 <!-- FOOTER -->
 <footer>
