@@ -6,6 +6,244 @@
 <title>Bright Future Public School</title>
 
 <style>
+    /* =========================
+   PREMIUM SCHOOL COLOR PALETTE
+========================= */
+
+/* BODY */
+
+body{
+background:#F7F9FC !important;
+color:#1F1F1F !important;
+font-family:'Poppins',sans-serif !important;
+overflow-x:hidden !important;
+}
+
+/* HEADER / NAVBAR */
+
+header,
+.navbar{
+background:#0A2E5C !important;
+backdrop-filter:blur(10px) !important;
+box-shadow:0 5px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* LOGO */
+
+.logo{
+color:#FFFFFF !important;
+font-weight:800 !important;
+letter-spacing:1px !important;
+}
+
+/* NAV LINKS */
+
+nav a{
+color:#FFFFFF !important;
+transition:0.3s !important;
+font-weight:500 !important;
+}
+
+nav a:hover{
+color:#D4A017 !important;
+}
+
+/* HERO SECTION */
+
+.hero{
+background:
+linear-gradient(rgba(10,46,92,0.75),rgba(15,76,156,0.75)),
+url('your-image.jpg') center/cover no-repeat !important;
+color:white !important;
+}
+
+/* HERO TEXT */
+
+.hero h1{
+color:#FFFFFF !important;
+font-size:65px !important;
+font-weight:800 !important;
+}
+
+.hero p{
+color:#EAF3FF !important;
+font-size:18px !important;
+line-height:1.8 !important;
+}
+
+/* HEADINGS */
+
+h1,h2,h3,h4,h5,h6{
+color:#0F4C9C !important;
+font-weight:700 !important;
+}
+
+/* SECTION */
+
+section{
+padding:100px 8% !important;
+}
+
+/* SECTION TITLES */
+
+.section-title h2{
+font-size:52px !important;
+margin-bottom:15px !important;
+color:#0F4C9C !important;
+}
+
+.section-title p{
+color:#6B7280 !important;
+font-size:18px !important;
+}
+
+/* PREMIUM CARDS / BOXES */
+
+.card,
+.box,
+.notice-box,
+.message-box,
+.news-box,
+.facility-box{
+background:#FFFFFF !important;
+border-radius:25px !important;
+padding:35px !important;
+box-shadow:0 8px 25px rgba(0,0,0,0.08) !important;
+border:none !important;
+transition:0.4s !important;
+}
+
+.card:hover,
+.box:hover,
+.notice-box:hover,
+.message-box:hover,
+.news-box:hover,
+.facility-box:hover{
+transform:translateY(-8px) !important;
+}
+
+/* BUTTONS */
+
+button,
+.btn{
+background:linear-gradient(135deg,#0F4C9C,#2563EB) !important;
+color:white !important;
+padding:15px 35px !important;
+border:none !important;
+border-radius:50px !important;
+font-size:16px !important;
+font-weight:600 !important;
+cursor:pointer !important;
+transition:0.3s !important;
+box-shadow:0 10px 20px rgba(15,76,156,0.25) !important;
+}
+
+/* BUTTON HOVER */
+
+button:hover,
+.btn:hover{
+background:#D4A017 !important;
+color:#000 !important;
+transform:translateY(-5px) !important;
+}
+
+/* INPUT FIELDS */
+
+input,
+textarea,
+select{
+background:#FFFFFF !important;
+border:2px solid #EAF3FF !important;
+padding:15px !important;
+border-radius:15px !important;
+outline:none !important;
+font-size:16px !important;
+color:#1F1F1F !important;
+}
+
+/* INPUT FOCUS */
+
+input:focus,
+textarea:focus,
+select:focus{
+border-color:#0F4C9C !important;
+}
+
+/* NOTICE BOARD */
+
+.notice-board{
+background:#EAF3FF !important;
+border-left:6px solid #0F4C9C !important;
+}
+
+/* FOOTER */
+
+footer{
+background:#0A2E5C !important;
+color:#FFFFFF !important;
+padding:30px !important;
+text-align:center !important;
+}
+
+/* LINKS */
+
+a{
+text-decoration:none !important;
+}
+
+/* GALLERY IMAGES */
+
+.gallery img{
+border-radius:20px !important;
+transition:0.4s !important;
+}
+
+.gallery img:hover{
+transform:scale(1.03) !important;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+width:10px !important;
+}
+
+::-webkit-scrollbar-thumb{
+background:#0F4C9C !important;
+border-radius:20px !important;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px !important;
+}
+
+.section-title h2{
+font-size:36px !important;
+}
+
+section{
+padding:80px 6% !important;
+}
+
+.card,
+.box,
+.notice-box,
+.message-box,
+.news-box{
+padding:25px !important;
+}
+
+button,
+.btn{
+width:100% !important;
+text-align:center !important;
+}
+
+}
     .section-title {
   font-size: 32px;
   font-weight: bold;
